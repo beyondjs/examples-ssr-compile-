@@ -1,0 +1,27 @@
+{
+  "name": "@beyond-examples/ssr",
+  "version": "0.0.1",
+  "keywords": [],
+  "static": {
+    "./require-css/require-css": "./require-css/require-css.js"
+  },
+  "exports": {
+    "./api": "./api.js",
+    "./home": "./home.js",
+    "./entries-ssr": "./entries-ssr.js",
+    "./store-entries": "./store-entries.js"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "socket.io": "^4.3.1",
+    "socket.io-client": "^4.4.1",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "uimport": [
+    "react"
+  ],
+  "clientDependencies": []
+}
