@@ -2,6 +2,9 @@
   "name": "@beyond-examples/ssr",
   "version": "0.0.1",
   "keywords": [],
+  "scripts": {
+    "start": "node server.js"
+  },
   "static": {
     "./require-css/require-css": "./require-css/require-css.js"
   },
