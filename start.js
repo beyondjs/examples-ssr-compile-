@@ -46,13 +46,15 @@ bundles.set({
   INTERNAL MODULE: ./start
   ***********************/
   ims.set('./start', {
-    hash: 974679947,
+    hash: 280800724,
     creator: function (require, exports) {
       "use strict";
 
       var _listen = require("@beyond-js/ssr/listen");
 
-      (0, _listen.listen)();
+      const pkg = '@beyond-examples/ssr';
+      const port = process.env.PORT || 9090;
+      (0, _listen.listen)(pkg, port);
     }
   });
 });

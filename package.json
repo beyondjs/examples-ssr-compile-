@@ -1,22 +1,21 @@
 {
   "name": "@beyond-examples/ssr",
   "version": "0.0.1",
+  "description": "ssr testing app",
   "keywords": [],
   "scripts": {
-    "start": "node server.js"
+    "start": "index.js"
   },
   "static": {
     "./require-css/require-css": "./require-css/require-css.js"
   },
   "exports": {
     "./api": "./api.js",
-    "./home": "./home.js",
     "./entries-ssr": "./entries-ssr.js",
-    "./store-entries": "./store-entries.js"
+    "./store-entries": "./store-entries.js",
+    "./config": "./config.js"
   },
   "dependencies": {
-    "@types/react": "^18.0.12",
-    "@types/react-dom": "^18.0.5",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "socket.io": "^4.3.1",

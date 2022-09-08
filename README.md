@@ -1,1 +1,1 @@
-# examples-ssr-compile
+# examples/ssr-compile-server

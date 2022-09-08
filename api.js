@@ -20,11 +20,11 @@ const __pkg = new __Bundle({
 ;
 externals.register(new Map([]));
 const ims = new Map();
-/************************
-INTERNAL MODULE: ./bridge
-************************/
+/***********************
+INTERNAL MODULE: ./index
+***********************/
 
-ims.set('./bridge', {
+ims.set('./index', {
   hash: 2199010481,
   creator: function (require, exports) {
     "use strict";
@@ -53,7 +53,7 @@ ims.set('./bridge', {
   }
 });
 __pkg.exports.descriptor = [{
-  "im": "./bridge",
+  "im": "./index",
   "from": "EntriesBridge",
   "name": "EntriesBridge"
 }];
@@ -66,7 +66,7 @@ __pkg.exports.process = function ({
   prop,
   value
 }) {
-  (require || prop === 'EntriesBridge') && (exports.EntriesBridge = EntriesBridge = require ? require('./bridge').EntriesBridge : value);
+  (require || prop === 'EntriesBridge') && (exports.EntriesBridge = EntriesBridge = require ? require('./index').EntriesBridge : value);
 };
 
 const hmr = new function () {
@@ -77,4 +77,4 @@ const hmr = new function () {
 exports.hmr = hmr;
 
 __pkg.initialise(ims);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFBTzs7SUFBVSxNQUNYQSxhQURXLENBQ0U7TUFDSixNQUFMQyxLQUFLO1FBQ1AsTUFBTSxJQUFJQyxPQUFKLENBQVlDLE9BQU8sSUFBSUMsVUFBVSxDQUFDRCxPQUFELEVBQVUsSUFBVixDQUFqQyxDQUFOO1FBRUEsT0FBTyxDQUFDO1VBQ0pFLEVBQUUsRUFBRSxDQURBO1VBRUpDLElBQUksRUFBRTtRQUZGLENBQUQsRUFHSjtVQUNDRCxFQUFFLEVBQUUsQ0FETDtVQUVDQyxJQUFJLEVBQUU7UUFGUCxDQUhJLENBQVA7TUFPSDs7SUFYYyIsIm5hbWVzIjpbIkVudHJpZXNCcmlkZ2UiLCJmZXRjaCIsIlByb21pc2UiLCJyZXNvbHZlIiwic2V0VGltZW91dCIsImlkIiwibmFtZSJdLCJzb3VyY2VSb290IjoiRTpcXHdvcmtzcGFjZVxcYmV5b25kXFxzYW1wbGVzLXRlc3RzXFxzc3IvIiwic291cmNlcyI6WyJzc3IvbW9kdWxlcy9hcGkvdHMvYnJpZGdlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFBTzs7SUFBVSxNQUNYQSxhQURXLENBQ0U7TUFDSixNQUFMQyxLQUFLO1FBQ1AsTUFBTSxJQUFJQyxPQUFKLENBQVlDLE9BQU8sSUFBSUMsVUFBVSxDQUFDRCxPQUFELEVBQVUsSUFBVixDQUFqQyxDQUFOO1FBRUEsT0FBTyxDQUFDO1VBQ0pFLEVBQUUsRUFBRSxDQURBO1VBRUpDLElBQUksRUFBRTtRQUZGLENBQUQsRUFHSjtVQUNDRCxFQUFFLEVBQUUsQ0FETDtVQUVDQyxJQUFJLEVBQUU7UUFGUCxDQUhJLENBQVA7TUFPSDs7SUFYYyIsIm5hbWVzIjpbIkVudHJpZXNCcmlkZ2UiLCJmZXRjaCIsIlByb21pc2UiLCJyZXNvbHZlIiwic2V0VGltZW91dCIsImlkIiwibmFtZSJdLCJzb3VyY2VSb290IjoiRTpcXHdvcmtzcGFjZVxcYmV5b25kXFxzYW1wbGVzLXRlc3RzXFxzc3IvIiwic291cmNlcyI6WyJzc3IvbW9kdWxlcy9hcGkvdHMvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXX0=
