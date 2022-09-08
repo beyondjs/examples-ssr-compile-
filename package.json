@@ -1,0 +1,31 @@
+{
+  "name": "@beyond-examples/ssr",
+  "version": "0.0.1",
+  "description": "ssr testing app",
+  "keywords": [],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "static": {
+    "./require-css/require-css": "./require-css/require-css.js"
+  },
+  "exports": {
+    "./api": "./api.js",
+    "./entries-ssr": "./entries-ssr.js",
+    "./store-entries": "./store-entries.js",
+    "./config": "./config.js"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "socket.io": "^4.3.1",
+    "socket.io-client": "^4.4.1",
+    "cheerio": "^1.0.0-rc.12",
+    "@beyond-js/react-widgets": "^18.18.1",
+    "@beyond-js/ssr": "^0.0.3"
+  },
+  "uimport": [
+    "react"
+  ],
+  "clientDependencies": []
+}
