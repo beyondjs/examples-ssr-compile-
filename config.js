@@ -11,6 +11,8 @@ var _default = {
     "default": "en",
     "supported": ["en", "es"]
   },
-  "local": "ssr.build"
+  "params": {},
+  "ssr": {},
+  "backend": {}
 };
 exports.default = _default;
