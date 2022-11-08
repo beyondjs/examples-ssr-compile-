@@ -6,7 +6,7 @@
   "keywords": [],
   "static": {},
   "scripts": {
-    "start": "index.js"
+    "start": "node index.js"
   },
   "exports": {
     "./api": "./api.js",
