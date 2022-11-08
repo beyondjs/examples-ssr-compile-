@@ -5,6 +5,9 @@
   "description": "ssr testing app",
   "keywords": [],
   "static": {},
+  "scripts": {
+    "start": "index.js"
+  },
   "exports": {
     "./api": "./api.js",
     "./entries-ssr": "./entries-ssr.js",
