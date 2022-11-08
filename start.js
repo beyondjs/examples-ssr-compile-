@@ -69,7 +69,6 @@ bundles.push([{
       const pkg = '@beyond-examples/ssr';
       const port = process.env.port;
       if (!port) new Error('no port specified');
-      console.log('start- - - - - ', pkg, port)
       (0, _listen.listen)(pkg, port);
     }
   });
