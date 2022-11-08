@@ -20,7 +20,9 @@
     "cheerio": "^1.0.0-rc.12",
     "@beyond-js/kernel": "^0.1.0",
     "@beyond-js/backend": "^0.1.0",
-    "@beyond-js/ssr": "^0.1.0"
+    "@beyond-js/ssr": "^0.1.0",
+    "@beyond-js/widgets": "^0.1.0",
+    "@beyond-js/react-widgets": "^18.20.1"
   },
   "uimport": [
     "@beyond-js/kernel/bundle",
