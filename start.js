@@ -67,7 +67,7 @@ bundles.push([{
       var _listen = require("@beyond-js/ssr/listen");
 
       const pkg = '@beyond-examples/ssr';
-      const port = process.env.port;
+      const port = process.env.PORT;
       if (!port) new Error('no port specified');
       (0, _listen.listen)(pkg, port);
     }
