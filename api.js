@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.hmr = exports.__beyond_pkg = exports.EntriesBridge = void 0;
+exports.hmr = exports.__beyond_pkg = exports.Entries = void 0;
 
 var dependency_0 = require("@beyond-js/kernel/bundle");
 
@@ -28,48 +28,54 @@ INTERNAL MODULE: ./index
 ***********************/
 
 ims.set('./index', {
-  hash: 2199010481,
+  hash: 4264566612,
   creator: function (require, exports) {
     "use strict";
 
     Object.defineProperty(exports, "__esModule", {
       value: true
     });
-    exports.EntriesBridge = void 0;
+    exports.Entries = void 0;
     /*bundle*/
 
-    class EntriesBridge {
+    class Entries {
       async fetch() {
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 2000));
         return [{
           id: 1,
-          name: 'Pepsi'
+          name: 'Argentina'
         }, {
           id: 2,
-          name: 'Coca Cola'
+          name: 'Brasil'
+        }, {
+          id: 3,
+          name: 'Ecuador'
+        }, {
+          id: 4,
+          name: 'Uruguay'
         }];
       }
 
     }
 
-    exports.EntriesBridge = EntriesBridge;
+    exports.Entries = Entries;
   }
 });
 __pkg.exports.descriptor = [{
   "im": "./index",
-  "from": "EntriesBridge",
-  "name": "EntriesBridge"
+  "from": "Entries",
+  "name": "Entries"
 }];
-let EntriesBridge; // Module exports
+let Entries; // Module exports
 
-exports.EntriesBridge = EntriesBridge;
+exports.Entries = Entries;
 
 __pkg.exports.process = function ({
   require,
   prop,
   value
 }) {
-  (require || prop === 'EntriesBridge') && (exports.EntriesBridge = EntriesBridge = require ? require('./index').EntriesBridge : value);
+  (require || prop === 'Entries') && (exports.Entries = Entries = require ? require('./index').Entries : value);
 };
 
 const __beyond_pkg = __pkg;
@@ -82,4 +88,4 @@ const hmr = new function () {
 exports.hmr = hmr;
 
 __pkg.initialise(ims);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFBTzs7SUFBVSxNQUNYQSxhQURXLENBQ0U7TUFDSixNQUFMQyxLQUFLO1FBQ1AsTUFBTSxJQUFJQyxPQUFKLENBQVlDLE9BQU8sSUFBSUMsVUFBVSxDQUFDRCxPQUFELEVBQVUsSUFBVixDQUFqQyxDQUFOO1FBRUEsT0FBTyxDQUFDO1VBQ0pFLEVBQUUsRUFBRSxDQURBO1VBRUpDLElBQUksRUFBRTtRQUZGLENBQUQsRUFHSjtVQUNDRCxFQUFFLEVBQUUsQ0FETDtVQUVDQyxJQUFJLEVBQUU7UUFGUCxDQUhJLENBQVA7TUFPSDs7SUFYYyIsIm5hbWVzIjpbIkVudHJpZXNCcmlkZ2UiLCJmZXRjaCIsIlByb21pc2UiLCJyZXNvbHZlIiwic2V0VGltZW91dCIsImlkIiwibmFtZSJdLCJzb3VyY2VSb290IjoiRTpcXHdvcmtzcGFjZVxcYmV5b25kLXByb3llY3RzXFxzYW1wbGVzLXRlc3RzXFxzc3IvIiwic291cmNlcyI6WyJwcm9qZWN0L21vZHVsZXMvYXBpL3RzL2luZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFBTzs7SUFBVSxNQUNYQSxPQURXLENBQ0o7TUFDRSxNQUFMQyxLQUFLO1FBQ1AsTUFBTSxJQUFJQyxPQUFKLENBQVlDLE9BQU8sSUFBSUMsVUFBVSxDQUFDRCxPQUFELEVBQVUsSUFBVixDQUFqQyxDQUFOO1FBRUEsT0FBTyxDQUNIO1VBQ0lFLEVBQUUsRUFBRSxDQURSO1VBRUlDLElBQUksRUFBRTtRQUZWLENBREcsRUFLSDtVQUNJRCxFQUFFLEVBQUUsQ0FEUjtVQUVJQyxJQUFJLEVBQUU7UUFGVixDQUxHLEVBU0g7VUFDSUQsRUFBRSxFQUFFLENBRFI7VUFFSUMsSUFBSSxFQUFFO1FBRlYsQ0FURyxFQWFIO1VBQ0lELEVBQUUsRUFBRSxDQURSO1VBRUlDLElBQUksRUFBRTtRQUZWLENBYkcsQ0FBUDtNQWtCSDs7SUF0QlEiLCJuYW1lcyI6WyJFbnRyaWVzIiwiZmV0Y2giLCJQcm9taXNlIiwicmVzb2x2ZSIsInNldFRpbWVvdXQiLCJpZCIsIm5hbWUiXSwic291cmNlUm9vdCI6IkU6XFx3b3Jrc3BhY2VcXGJleW9uZC1wcm95ZWN0c1xcc2FtcGxlcy10ZXN0c1xcc3NyLyIsInNvdXJjZXMiOlsicHJvamVjdC9tb2R1bGVzL2FwaS90cy9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdfQ==

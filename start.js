@@ -31,13 +31,22 @@ const {
   widgets
 } = brequire('@beyond-js/widgets/render');
 widgets.register([{
-  "name": "home-page",
-  "vspecifier": "@beyond-examples/ssr@0.0.1/home",
+  "name": "csr-page",
+  "vspecifier": "@beyond-examples/ssr@0.0.1/csr-test",
   "is": "page",
-  "route": "/"
+  "route": "/csr-page"
 }, {
-  "name": "entries-ssr-page",
-  "vspecifier": "@beyond-examples/ssr@0.0.1/entries-ssr",
+  "name": "sr-page",
+  "vspecifier": "@beyond-examples/ssr@0.0.1/sr",
+  "is": "page",
+  "render": {
+    "csr": false,
+    "sr": ["/page/test", "/page/example"]
+  },
+  "route": "/page/${entry}"
+}, {
+  "name": "ssr-page",
+  "vspecifier": "@beyond-examples/ssr@0.0.1/ssr-test",
   "is": "page",
   "render": {
     "csr": false,

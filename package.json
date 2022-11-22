@@ -1,8 +1,8 @@
 {
   "name": "@beyond-examples/ssr",
   "version": "0.0.1",
-  "title": "SSR test project",
-  "description": "ssr testing app",
+  "title": "SSR CSR SR test project",
+  "description": "Rendering testing app",
   "keywords": [],
   "static": {},
   "scripts": {
@@ -10,13 +10,15 @@
   },
   "exports": {
     "./api": "./api.js",
-    "./entries-ssr": "./entries-ssr.js",
+    "./csr-test": "./csr-test.js",
+    "./sr": "./sr.js",
+    "./ssr-test": "./ssr-test.js",
     "./store-entries": "./store-entries.js",
     "./config": "./config.js"
   },
   "dependencies": {
-    "socket.io": "^4.3.1",
-    "socket.io-client": "^4.5.2",
+    "socket.io": "^4.5.3",
+    "socket.io-client": "^4.5.3",
     "cheerio": "^1.0.0-rc.12",
     "@beyond-js/kernel": "^0.1.0",
     "@beyond-js/backend": "^0.1.0",
